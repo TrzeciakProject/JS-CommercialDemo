@@ -1,0 +1,25 @@
+/* Pre-defined tag's */
+* {
+
+}
+
+body {
+
+}
+
+nav, footer {
+  width: 100%;
+  border: 1px solid gray;
+  min-height: 5em;
+}
+
+/* Custom classes */
+.home-body {
+  padding: 2.5em;
+  border: 1px solid gray;
+}
+
+.home-content-wrapper {
+  min-height: 80vh;
+  border: 1px solid gray;
+}
