@@ -13,3 +13,6 @@ By default whole project is placed inside the 'app' folder. (App sometimes is ca
 
 
 ## Tasks and Sprits - http://www.jetbrains.com/youtrack/
+
+
+This is example of single page website.
