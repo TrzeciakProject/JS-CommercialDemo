@@ -23,32 +23,101 @@ nav, footer {
   min-height: 80vh;
   border: 1px solid gray;
 }
+
+  /* Container style - wrapping all essential content */
+  .home-content-wrapper .container {
+    /* border: 1px solid red; */
+    width: 65%;
+    margin: 1%;
+    float: left;
+  }
+    /* Pinterest images style */
+    .home-content-wrapper .container #pinterest-images {
+      display: flex;
+      flex-wrap: wrap;
+    }
+      .home-content-wrapper .container .pinterest-image {
+        /* border: 1px solid gray; */
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .home-content-wrapper .container .pinterest-image:hover {
+        background: rgba(0,0,0,0.1);
+      }
+
+    /* Pinterst image description */
+    .home-content-wrapper .container .pinterest-image .description {
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Pinterest image */
+    .home-content-wrapper .container .pinterest-image img {
+      margin: 0 auto 1em auto;
+    }
+
+/* Sidebar containing useful information and additional features */
+.home-content-wrapper .sidebar {
+  border: 1px solid blue;
+  float:right;
+  min-width: 30%;
+  text-align: center;
+  margin: 1%;
+  max-width: 30%;
+}
+
+.home-content-wrapper .sidebar > div {
+  margin-top: 1em;
+}
+  .home-content-wrapper .sidebar div:last-child {
+    margin-bottom: 1em;
+  }
+
+  /* Author style */
+  .home-content-wrapper .sidebar .author img {
+    margin: 0 auto;
+    max-width: 150px;
+    border-radius: 5em;
+    border: 5px solid black;
+  }
+
+  .home-content-wrapper .sidebar .author p {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+    .home-content-wrapper .sidebar .author p span {
+      font-size: 0.9em;
+      font-weight: 100;
+    }
+
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
+  /* Style the links inside the navigation bar */
+  .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+      display: none;
+  }
 
 /* Add an active class to highlight the current page */
 .active {
     background-color: #4CAF50;
     color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
 }
 
 /* Dropdown container - needed to position the dropdown content */
@@ -57,17 +126,17 @@ nav, footer {
     overflow: hidden;
 }
 
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-    font-size: 17px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
@@ -79,15 +148,15 @@ nav, footer {
     z-index: 1;
 }
 
-/* Style the links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
